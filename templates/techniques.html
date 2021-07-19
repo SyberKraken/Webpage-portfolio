@@ -1,0 +1,50 @@
+{% extends "nav_head_foot.html" %}
+
+{% block head_extension %}
+
+
+{% endblock %}
+
+{% block body %}
+<section class="tech_pick">
+  <form method = "POST">
+    <ul>
+      {% for tech in techniques %}
+      {% if tech in checked_tech %}
+      <input class = "hidden" id = "{{ tech }}" type = "checkbox" name = "tech" value = "{{ tech }}" checked onChange="this.form.submit()">
+      {% else %}
+      <input class = "hidden" id = "{{ tech }}" type = "checkbox" name = "tech" value = "{{ tech }}" onChange="this.form.submit()" />
+      {% endif %}
+      <label for="{{ tech }}">{{ tech }} </label>
+      {% endfor %}
+      
+    </ul>
+  </form>
+</section>
+
+<section class="projects_list">
+
+  {% for project in projects %}
+  <section class="project">
+    <h3><a href ="{{ '../project/%s'%project.project_id }}"/>{{ project.project_name }}</a></h3>
+    <section class="mini_tech">
+      <p>Tekniker: </p>
+      {% for tech in project.techniques_used %}
+      <p>{{ tech }}</p>
+      {% endfor %}
+
+    </section>
+    
+    <img src="../static/images/{{ project.small_image }}">
+
+    <p>{{ project.short_description }} </p>
+
+    </section>
+    {% endfor %}
+
+</section>
+
+
+
+
+{% endblock %}

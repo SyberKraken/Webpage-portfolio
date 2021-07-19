@@ -1,0 +1,123 @@
+\documentclass{TDP003mall}
+
+\usepackage{xcolor}
+
+\newcommand{\version}{Version 1.0}
+\author{Simon Gradin, \url{simgr011@student.liu.se}\\
+  Robin Jensen, \url{robje408@student.liu.se}}
+  
+\title{Installationsmanual}
+\date{\today}
+\rhead{Robin Jensen - Simon Gradin}
+
+
+
+\begin{document}
+\projectpage
+
+\tableofcontents
+\clearpage
+
+\section{Introduktion}
+Det här är installationsmanualen för de verktyg som används i projektet ''portfolio projekt'' i TDP003.Innan installationerna vänligen skriv:
+
+\textbf{sudo apt update}
+
+Detta är för att se till att all programvara är uppdaterad. Terminalen öppnas genom att klicka på Ctrl, Alt och T samtidigt.
+
+\section{Installationsplanen}
+Installationsplan för de verktyg som används i projektet ''portfolio projekt'' i TDP003. Innan installationerna vänligen skriv:
+
+\textbf{sudo apt update}
+
+i terminalen för att se till att all programvara är uppdaterad. Terminalen öppnas genom att klicka på Ctrl, Alt och T samtidigt.
+
+\subsection{Förutsättnignar}
+Förutsättningar i denna manual är att anändaren har ubuntu 20.04 eller senare.
+
+\subsection{Python}
+Pyhton är ett programmeringsspråk som används för att programmera API:t i detta projekt.
+Om python inte är förinstallerat på Linux operativsystem måste detta installeras. Öppna terminalen och skriv:
+
+\textbf{sudo apt-get install python3.8 python3-pip}.
+
+För att kolla om python är installerat skrivs:
+
+\textbf{python3 --version}
+
+Om ''python 3.8'' visas i terminalen är installationen lyckad.
+
+\subsection{Emacs}
+Emacs är en texteditor som används för att underhålla samt skriva kod och andra dokument i projektet.
+För att installera emacs skrivs kommandot:
+
+\textbf{sudo apt install emacs}
+
+Följ kommando instruktioner i terminalen. \\
+Testa att öppna emacs genom att skriva följande i terminalen:
+
+\textbf{emacs}
+
+Om emacs startar är installationen lyckad.
+
+\subsection{Git}
+Git används för versionshantering samt säkerhetskopiering av projektet. Git finns som standard förinstallerat på Linux distros. För att kolla om git fungerar korrekt vänligen skriv följande i konsolen:
+
+\textbf{git}
+
+Om en manual för kommandon visas är allt som det ska. Om git inte är förinstallerat skriv:
+
+\textbf{sudo apt install git-all}
+
+Sedan testa om git är installerat igen.
+
+\subsection{GIMP}
+GIMP är en image-editor som används för bildredigering i projektet.\\
+För att installera GIMP skriv följande kommando i terminalen:
+
+\textbf{sudo apt install gimp gimp-gmic}
+
+Vänligen följ följande instruktioner. För att kolla om installationen är lyckad skriv följande i terminalen:
+
+\textbf{gimp}
+
+\subsection{Flask och Jinja2}
+Installationen av flask och jinja görs genom följande kommandon:
+
+\textbf{sudo apt-get install python-setuptools}
+
+Därefter skrev vi:
+
+\textbf{sudo apt install python3-pip}
+
+följt av
+
+\textbf{sudo pip3 install flask}
+
+För att testa om flask är korrekt installerad skriv följande i terminalen:
+
+\textbf{python3}
+
+Sedan i python3 prompten skriv:
+
+\textbf{import flask} samt \textbf{flask.\_\_version\_\_}
+
+Om flask är korrekt installerat ska versionsnummer visas i konsolen.
+För att testa om Jinja2 är korrekt installerat kör följande i konsolen:
+
+\textbf{pip show Jinja2}
+
+Om det är korrekt installerat ska info om versionen visas.
+
+
+\subsection{Firefox}
+Projektet utgår ifrån användning av firefox webbläsar, som används för att kolla hemsidan samt hitta information. Firefox har även inbyggda utvecklingsverktyg som används vid felsökning m.m.. Om inte Firefox är förinstallerat på operativsystemet vänligen använd följande kommando i terminalen:
+
+\textbf{sudo apt install firefox}
+
+För att vara säker på att firefox är installerat skriv följande i terminalen:
+
+\textbf{firefox}
+
+
+\end{document}

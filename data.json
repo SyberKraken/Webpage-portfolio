@@ -1,0 +1,81 @@
+[
+  {
+    "start_date": "2020-11-12",
+    "short_description": "Top down 2D Zombie shooter",
+    "course_name": "Projekt: Objektorienterat system",
+    "long_description": "Objektorienterat projekt i vilket spelaren går genom nivåer och dödar zombies genom att skjuta. Skrivet i C++ med Objektorienterat kodstruktur. Under projektets gång har jag lärt mig om SFML bibloteket samt  om utritning och updatering av 2D-Grafik. Projektet skrevs på i stort sett 2 veckors arbetsdagar och dokumenterades väl. De dokument som skrevs före kodningsfasen var otroligt hjälpsamma då det snabbade upp kodningen avsevärt då det aldrig var någon tvekan om vad som behövdes arbetas på. Efter kursen tdp005 så har jag större insikt i vikten av planering och hur mycket det underlättar utförandetav projekt. Arbetet med att bygga upp en klasstruktur och planera relationer och hierarkier mellan de olika delarna gaven klar insikt i vad som behövde implementeras och vart som arbetstid borde läggas. Jag har ingen tvekanom att projektet kunnat utföras utan det obligatoriska förarbetet men jag tvivlar starkt på att vi hade utförtarbetet lika effektivt.Ett exemepel är att i början av projektet så såg vi vilka klasser som behövdes, vad som behövde imple-menteras för att kunna ha något som kunde testas och utgick från detta. Vi skrev in alla klasser som filer och implementerade hårdkodad utdata och funktionalitet på de ställen som vi inte var säkra på vad som behövdes och försökte visa upp något på skärmen till en start.Detta gjorde att vi hade någon slags minimalt program att testa även om majoriteten av funktionaliteten inte var där så var t.ex funktionsanrop och arvstrukturen implementerad från början vilket gjorde det enklare att se vart arbete behövde göras. Konceptet om objektorientering passar särskilt bra konceptuellt inom de sorts spel som projektet krävde,fiender, spelare, hinder och så vidare är konceptuellt enkla att uppfatta som objekt med egna attribut,funktionalitet och egenskaper",
+    "group_size": 2,
+    "academic_credits": "6",
+    "lulz_had": "Some, wuite stressfull tbh",
+    "external_link": "https://gitlab.liu.se/simgr011/tdp005/-/commits/master",
+    "small_image": "zbig2.png",
+    "techniques_used": [
+      "c++",
+      "OO"
+    ],
+    "project_name": "Zs20",
+    "course_id": "TDP005",
+    "end_date": "2020-12-18",
+    "project_id": 1,
+    "big_image": "largezombiegame.png"
+  },
+  {
+    "start_date": "2021-03-19",
+    "short_description": "Script for extracting CS-GO stats from website",
+    "course_name": "Free time project",
+    "long_description": "Python script written in an evening to easily scout enemy teams when playing competative CS-GO",
+    "group_size": 1,
+    "academic_credits": "0",
+    "lulz_had": "1",
+    "external_link": "https://github.com/SyberKraken/Faceit-stat-scraper",
+    "small_image": "faceit.png",
+    "techniques_used": [
+      "web scraping",
+      "python"
+    ],
+    "project_name": "Faceit stat scraper",
+    "course_id": "No course",
+    "end_date": "2021-03-19",
+    "project_id": 3,
+    "big_image": "faceit.png"
+  },
+  {
+    "start_date": "2009-09-08",
+    "short_description": "no",
+    "course_name": "OK\u00c4NT",
+    "long_description": "no no no",
+    "group_size": 6,
+    "academic_credits": "WUT?",
+    "lulz_had": "medium",
+    "external_link": "YY",
+    "small_image": "test.png",
+    "techniques_used": [
+      "ada",
+      "python"
+    ],
+    "project_name": "2007",
+    "course_id": "TDP003",
+    "end_date": "2009-09-09",
+    "project_id": 2,
+    "big_image": "test.png"
+  },
+  {
+    "start_date": "2021-03-25",
+    "short_description": "Minimalistic cross compiled itterative programming language",
+    "course_name": "Projekt Datorspråk",
+    "long_description": "Programming language based on a postfix system written with minimalistic keywords and statements in a 'function call' sytanx style. Cross compiled in ruby with a recursive descent parser. To see current implementation features read documentations on gitlab page.",
+    "group_size": 2,
+    "academic_credits": "10",
+    "lulz_had": "1to5",
+    "external_link": "https://gitlab.liu.se/kasni325/dopo-version-1.0",
+    "small_image": "dopo.png",
+    "techniques_used": [
+
+    ],
+    "project_name": "Dopo",
+    "course_id": "TDP019",
+    "end_date": "2021-06-01",
+    "project_id": 4,
+    "big_image": "dopo.png"
+  }
+]

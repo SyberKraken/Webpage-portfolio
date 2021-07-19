@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style.css') }}">
+    <title>projekt</title>
+    {% block head_extension %}
+    {% endblock %}
+
+  </head>
+  <body>
+    <nav>
+      <ul>
+	<a href = "/"><li>About me</li></a>
+	<a href = "/techniques/"><li>Projects</li></a>
+	<a href = "/list/"><li>Project search</li></a>
+      </ul>
+    </nav>
+
+    {% block body %}
+
+    {% endblock %}
+
+
+    <footer>
+      <ul>
+	<!--links in fortm of a tags with href links are styled here-->
+      </ul>
+    </footer>
+  </body>
+
+
+</html>

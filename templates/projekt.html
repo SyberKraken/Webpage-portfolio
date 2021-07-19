@@ -1,0 +1,100 @@
+{% extends "nav_head_foot.html" %}
+
+{% block head_extension %}
+
+
+{% endblock %}
+
+{% block body %}
+
+<section id="search">
+
+  <form method="GET">
+    <input type = "text" name = "search" value = "{{ search }}",  />
+    <input type = "submit" value = "&#128269"/>
+  </form>
+  <br>
+</section>
+
+<section id="field_and_order">
+  <form method ="GET">
+    <select name = "field" onChange="this.form.submit()">
+      {% for field in fields %}
+      <option value = "{{ field }}"
+
+	      {% if field == checked_field %}
+	      selected
+	      {% endif %}
+
+	      > {{ field }} </option>
+      {% endfor %}
+    </select>
+  </form>
+
+  <form method ="GET">
+    <select name = "order" onChange="this.form.submit()">
+      {% for order in orders %}
+      <option value = "{{ order }}"
+
+	      {% if order == checked_order %}
+	      selected
+	      {% endif %}
+
+	      > {{ order }} </option>
+      {% endfor %}
+
+    </select>
+  </form>
+</section>
+
+<section id="techs">
+  <form method="POST">
+    <ul>
+      {% for tech in techniques %}
+      {% if tech in checked_tech %}
+      <li> {{ tech }} <input type = "checkbox" name = "tech" value = "{{ tech }}" checked onChange="this.form.submit()"></li>
+      {% else %}
+      <li> {{ tech }} <input type = "checkbox" name = "tech" value = "{{ tech }}" onChange="this.form.submit()" /></li>
+      {% endif %}
+      {% endfor %}
+
+    </ul>
+</section>
+
+<section id="fields">
+    <ul>
+      {% for search_field in fields %}
+      {% if search_field in checked_search_fields %}
+      <li> {{ search_field }}  <input type = "checkbox" name = "search_field" value = "{{ search_field }}" checked onChange="this.form.submit()"></li>
+      {% else %}
+      <li> {{ search_field }}  <input type = "checkbox" name = "search_field" value = "{{ search_field }}" onChange="this.form.submit()" /></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </form>
+</section>
+
+<section class="projects_list">
+
+  {% for project in projects %}
+  <section class="project">
+    <h3><a href ="{{ '../project/%s'%project.project_id }}"/>{{ project.project_name }}</a></h3>
+    <section class="mini_tech">
+      <p>Tekniker: </p>
+      {% for tech in project.techniques_used %}
+      <p>{{ tech }}</p>
+      {% endfor %}
+
+    </section>
+
+    <img src="../static/images/{{ project.small_image }}">
+
+    <p>{{ project.short_description }} </p>
+
+    </section>
+    {% endfor %}
+
+</section>
+
+
+{% endblock %}

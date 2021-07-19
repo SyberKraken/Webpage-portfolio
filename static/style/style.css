@@ -1,0 +1,258 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    font-family: consolas;
+    margin: auto;
+    width: 75%;
+    background-color: black;
+    color: white;
+}
+
+header h1 {
+    margin: 0 auto;
+    margin-bottom: 1vw;
+    text-align: center;
+    width: auto;
+    font-size: 4vw;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+  font-size: 1.6vw;
+    list-style-type: none;
+    display: inline-block;
+    width: 20vmax;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: darkgreen;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+}
+
+nav li:hover {
+    background-color: green;
+}
+
+nav a {
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+
+#search, #field_and_order, #techs, #fields {
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-left: 1vw;
+}
+
+.projects_list{
+  text-align: center;
+}
+
+.project {
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    width: 20.5vmax;
+    margin: 1vw;
+    padding: 1vw;
+    align-items: center;
+    vertical-align: top;
+    border-top-right-radius: 1vw;
+    font-size: 1vw;
+    word-wrap: break-word;
+}
+
+.project h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 0.4vW;
+}
+
+.project a {
+    color: white;
+    text-decoration: none;
+}
+.project p {
+  font-size: 1rem;
+}
+.mini_tech {
+  /*remove display none and visibility hidden for more project info on cards*/
+    display: inline-block;
+    display:none;
+    visibility: hidden;
+    border: solid white;
+    width: 12vw;
+}
+
+.mini_tech p {
+    display: inline-block;
+}
+
+.project img {
+    width: 7rem;
+    height: 7rem;
+    float: right;
+}
+
+.tech_pick {
+    text-align: center;
+    font-size: 1vw;
+}
+
+.tech_pick label {
+    width: 15vw;
+    display: inline-block;
+    padding: 1vw;
+    margin: 1vw;
+    font-size: 1.3vw;
+}
+
+.tech_pick input[type=checkbox] + label:hover {
+    background-color: darkgreen;
+}
+
+.tech_pick input[type=checkbox] + label {
+    background-color: #161718;
+    color: green;
+    width: 10vw;
+    border: 0.5;
+}
+
+
+.tech_pick input[type=checkbox]:checked + label {
+
+    background-color: darkgreen;
+    color: black;
+    border: 0.5;
+}
+
+
+.hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+
+footer {
+    margin-top: 2vw;
+    text-align: center;
+    background-color: lightgray;
+}
+
+footer li {
+    list-style-type: none;
+    display: inline-block;
+    width: 32%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+footer li:hover {
+    background-color: gray;
+}
+
+footer a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+#index {
+    margin: 1vw;
+    padding-top: 1.3vw;
+    font-size: 1vw;
+}
+
+#index h2 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+
+
+#imageT{
+    display: inline-block;
+    float: right;
+    width: 17vw;
+    height: 17vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+
+}
+
+#index_text{
+    display:inline-block;
+}
+
+#title_id {
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+}
+
+#right_side {
+    float: right;
+    width: 20vw;
+    padding: 1vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+    border-right: 2vw;
+    border: white solid 3px;
+    border-radius: 10px;
+}
+
+#img_id_page {
+
+    width: 20vw;
+    height: 20vw;
+    margin-bottom: 2vw;
+}
+
+#tech_id_page {
+    float: left;
+    display: inline-block;
+    width: 5vw;
+    height: auto;
+
+
+}
+
+#extra_info {
+    float: right;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+#desc_id_page{
+    float: right;
+  width: 30%;
+}
+
+#project_wrap{
+  width: 100%;
+}
+
+#project_id {
+    overflow: hidden;
+    width: 75%;
+    padding-left: 12.5%;
+}
+
+#content_wrap{
+  padding-right: 12.5%;
+}
