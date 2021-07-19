@@ -1,5 +1,0 @@
-Planeringsdokument - 2 timmar
-Lofi - 2 timmar
-Installationsmanual - 4 timmar
-Projektplan - 6 timmar
-API - 3 timmar
